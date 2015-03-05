@@ -30,7 +30,7 @@ public class DemoHXSDKModel extends DefaultHXSDKModel{
 
     // demo will not use HuanXin roster
     public boolean getUseHXRoster() {
-        return false;
+        return true;
     }
     
     // demo will switch on debug mode
