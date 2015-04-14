@@ -391,7 +391,7 @@ public class ChatActivity extends BaseActivity implements OnClickListener, EMEve
 			// 显示发送要转发的消息
 			forwardMessage(forward_msg_id);
 		}
-
+		adapter.refreshSelectLast();
 	}
 
 	/**
@@ -883,7 +883,7 @@ public class ChatActivity extends BaseActivity implements OnClickListener, EMEve
 		message.setReceipt(toChatUsername);
 		conversation.addMessage(message);
 		listView.setAdapter(adapter);
-		adapter.notifyDataSetChanged();
+		adapter.refresh();
 		listView.setSelection(listView.getCount() - 1);
 		setResult(RESULT_OK);
 
