@@ -88,7 +88,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 	private boolean isCurrentAccountRemoved = false;
 
 	public static MainActivity activityInstance;
-
 	/**
 	 * 检查当前用户是否被删除
 	 */
