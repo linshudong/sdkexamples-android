@@ -1368,7 +1368,7 @@ public class ChatActivity extends BaseActivity implements OnClickListener, EMEve
 				if (view.getFirstVisiblePosition() == 0 && !isloading && haveMoreData) {
 					isloading = true;
 					loadmorePB.setVisibility(View.VISIBLE);
-					// sdk初始化加载的聊天记录为20条，到顶时去db里获取更多
+					// sdk初始化加载的聊天记录为20条，到顶时去db里获取更多					
 					List<EMMessage> messages;
 					EMMessage firstMsg = conversation.getAllMessages().get(0);
 					try {

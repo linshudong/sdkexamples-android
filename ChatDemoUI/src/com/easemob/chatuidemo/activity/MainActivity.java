@@ -88,6 +88,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 	private boolean isCurrentAccountRemoved = false;
 
 	public static MainActivity activityInstance;
+
 	/**
 	 * 检查当前用户是否被删除
 	 */
@@ -98,7 +99,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
 			// 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
 			// 三个fragment里加的判断同理
