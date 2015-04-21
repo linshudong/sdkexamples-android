@@ -587,8 +587,6 @@ public class MessageAdapter extends BaseAdapter{
 				// 发送消息
 				sendMsgInBackground(message, holder);
 			}
-		}else{
-			Log.i("info","txt===");
 		}
 	}
 
