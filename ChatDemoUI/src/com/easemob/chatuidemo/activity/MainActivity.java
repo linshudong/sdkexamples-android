@@ -212,7 +212,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 
 			// 提示新消息
 			HXSDKHelper.getInstance().getNotifier().onNewMsg(message);
-
+Log.i("info", "mainactivity event");
 			refreshUI();
 			break;
 		}
